@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
+
+body,
+* {
+  margin: 0;
+  font-family: "Jomolhari", serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+
+  .logo {
+    font-size: 1.5em;
+  }
+
+  nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+
+  .post-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  #post-title {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+
+  #tags {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    margin: 20px 0;
+    align-self: center;
+  }
+
+  .content {
+    font-size: 1.125em;
+    margin: 20px 0;
+  }
+}

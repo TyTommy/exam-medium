@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medium Clone - Login</title>
+  <link rel="stylesheet" href="css/dashboard.min.css" />
+</head>
+
+<body>
+  <main>
+    <div class="auth-container">
+      <form action="" id="login-form">
+        <img class="logo" src="../assets/images/medium.png" alt="Medium icon" width="188px" />
+        <h1>Login</h1>
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email" required />
+        </div>
+        <div class="input-group password-group">
+          <input type="password" id="password" placeholder="Password" required />
+          <span class="password-toggle">
+            <img src="../assets/icons/eye_icon.png" alt="Show Password" />
+          </span>
+        </div>
+        <div class="signup-link">
+          Don't you have an account? <a href="/signup.html">Sign Up</a>.
+        </div>
+        <div id="error-message" hidden>
+          Wrong email or password. Please try again.
+        </div>
+        <button id="submit-button" type="submit" class="primary-button">
+          <span class="primary-button__text">Login</span>
+        </button>
+      </form>
+    </div>
+  </main>
+  <script src="scripts/auth.js" defer></script>
+</body>
+
+</html>

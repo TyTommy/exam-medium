@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create New Post</title>
+  <link rel="stylesheet" href="css/dashboard.min.css" />
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <h1>Dashboard</h1>
+      <div class="profile">
+        <h3 id="user-name">Ibrokhim Jalalov</h3>
+        <p>Author</p>
+      </div>
+      <button class="primary-button">Create Post</button>
+      <button class="primary-button sign-out-btn" onclick="signOut()">
+        Sign Out?
+      </button>
+    </div>
+    <div class="dashboard-content">
+      <h1>Create New Post</h1>
+      <form id="create-new-post-form" action="">
+        <div class="form-column">
+          <label for="title">Post title</label>
+          <input type="text" id="title" name="title" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-column">
+            <label for="image">Post image</label>
+            <input type="text" id="image" name="image" required />
+          </div>
+          <div class="form-column">
+            <label for="tag">Post tag</label>
+            <input type="text" id="tag" name="tag" />
+          </div>
+        </div>
+
+        <div class="form-column">
+          <label for="description">Post description</label>
+          <textarea id="description" name="description" rows="5" required></textarea>
+        </div>
+        <div id="success-message" hidden>
+          Your post has been successfully created.
+        </div>
+        <button id="submit-button" type="submit" class="submit-button primary-button">
+          <span class="primary-button__text">Create Post</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <script src="scripts/dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medium Sign Up</title>
+  <link rel="stylesheet" href="css/dashboard.min.css" />
+</head>
+
+<body>
+  <div class="auth-container">
+    <form action="" id="signup-form">
+      <img class="logo" src="../assets/images/medium.png" alt="Medium icon" width="188px" />
+      <h1>Sign Up</h1>
+      <div class="input-group">
+        <input type="text" id="firstname" placeholder="Firstname" required />
+      </div>
+      <div class="input-group">
+        <input type="text" id="lastname" placeholder="Lastname" required />
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" placeholder="Email" required />
+      </div>
+      <div class="input-group password-group">
+        <input type="password" id="password" placeholder="Password" minlength="8" required />
+        <span class="password-toggle">
+          <img src="../assets/icons/eye_icon.png" alt="Show Password" />
+        </span>
+      </div>
+      <div class="signup-link">
+        Don't you have an account? <a href="/login.html">Login</a>.
+      </div>
+      <div id="error-message" hidden>
+        Something went wrong. Please try again.
+      </div>
+      <button id="submit-button" type="submit" class="primary-button">
+        <span class="primary-button__text">Sign Up</span>
+      </button>
+    </form>
+  </div>
+  <script src="scripts/auth.js" defer></script>
+</body>
+
+</html>
